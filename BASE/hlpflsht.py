@@ -115,10 +115,11 @@ class HelpHackathon:
         plt.show()
 
 
-    def moving_average(self, data, label_encoder, tiker_name = 'TICKER', column_name = 'OPEN', window_size = 1):
+    def moving_average(self, data, label_encoder, tiker_name = 'TICKER', column_name = 'CLOSE', window_size = 1):
         """СОздает в data новую колонку SMA в которой будет храниться скользящее среднее сделанное по заданному размеру окна"""
 
-        data['SMA'] = data[column_name]
+        data['SMA'] = data[column_name].copy()
+        # data['SMMA'] = data['SMA'].copy()
 
         for i, name in enumerate(self.uniq_ticker_names):
             indexes = data.loc[data[tiker_name] == name].index
