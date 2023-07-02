@@ -36,7 +36,10 @@
 
 [DashBoard с ML задачей сравнение CatBoost модели (1 час и 1 день)](https://datalens.yandex/lcb3qzy4zvhoa)
 
+[DashBoard с моделью классификации](https://datalens.yandex/b25sy0it6o6o0)
+
 [DashBoard с Анализом индексов риска](https://datalens.yandex/h8a38zhcq3cg6)
+
 
 
 
